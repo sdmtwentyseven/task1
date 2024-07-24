@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 1</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .bold {
+            font-weight: bold;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">Name: <span id="name" class="highlight">Dmitriy Skakovskiy</span></div>
+    <div class="header">Group: <span id="group" class="highlight">MT-2201</span></div>
+    
+    <div id="datetime"></div>
+    
+    <div class="result">
+        <p id="graduation"></p>
+    </div>
+    
+    <div class="result">
+        <label for="num1">1st Number: </label>
+        <input type="number" id="num1">
+        <label for="num2">2nd Number: </label>
+        <input type="number" id="num2">
+        <button onclick="calculate('multiply')">Multiply</button>
+        <button onclick="calculate('divide')">Divide</button>
+        <p id="calcResult">The Result Is: <span id="result"></span></p>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
